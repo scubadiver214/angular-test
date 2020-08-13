@@ -1,0 +1,6 @@
+<div *ngIf="studentDetails">
+    <div id="student-name-div"><b>Name: {{studentDetails.firstName}} {{studentDetails.lastName}}</b></div>
+    <div id="student-number-div"><b>Student Number: {{studentDetails.studentNumber}}</b></div>
+    <div id="student-email-div"><b>Email: {{studentDetails.email}}</b></div>
+    <div id="student-registration-date-div"><b>Registration Date: {{studentDetails.registrationDate | date }}</b></div>
+</div>

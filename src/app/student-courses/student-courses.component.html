@@ -1,0 +1,9 @@
+<div>
+  <p><b>Courses:</b></p>
+  <p></p>
+  <ul id="student-courses-list">
+    <li *ngFor="let course of studentCources">
+      {{ course.instructor }} {{ course.name }} Credits: ({{ course.credits }})
+    </li>
+  </ul>
+</div>
