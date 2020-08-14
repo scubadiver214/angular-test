@@ -1,9 +1,9 @@
-<div>
+<div *ngIf="studentCourses.length > 0">
   <p><b>Courses:</b></p>
   <p></p>
   <ul id="student-courses-list">
-    <li *ngFor="let course of studentCources">
-      {{ course.instructor }} {{ course.name }} Credits: ({{ course.credits }})
+    <li *ngFor="let course of studentCourses">
+      {{ course.name }} - {{ course.instructor }} ({{ course.credits }} credits)
     </li>
   </ul>
 </div>

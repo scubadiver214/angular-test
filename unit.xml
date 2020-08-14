@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 0.0.0 (Windows 10 0.0.0)" package="unit" timestamp="2020-08-14T13:46:04" id="0" hostname="TR-GTJMXY2" tests="10" errors="0" failures="0" time="0.362">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent Functionality Selecting a student should display the selected student's courses with the name, instructor, and credits, ignoring exact format" time="0.038" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Functionality Selecting a student should display the selected student's courses with the name, instructor, and credits with the exact format asked" time="0.031" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Functionality Selecting a student should display the selected student's courses in alphabetical order by course name" time="0.029" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Functionality Selecting a student should call getCourseIdsForStudent only once" time="0.026" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Functionality Selecting a student should call getCourse only once per course" time="0.025" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Bonus should not display student info when no student is selected" time="0.025" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Bonus should not display student courses list when no student is selected" time="0.029" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Functionality should display the complete list of students with first name and last name in the dropdown" time="0.098" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Functionality should call getStudents only once" time="0.032" classname="unit.AppComponent"/>
+  <testcase name="AppComponent Functionality Selecting a student should display the selected student's name, student number, email, and registration date" time="0.029" classname="unit.AppComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

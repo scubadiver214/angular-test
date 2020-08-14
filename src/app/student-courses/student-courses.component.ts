@@ -10,18 +10,18 @@ import { Course } from '../models/course';
 })
 export class StudentCoursesComponent {
   @Input() event: Event;
-  public studentCources: Course[];
+  public studentCourses: Course[];
   constructor(private studentService: StudentService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.event.currentValue) {
+      this.studentCourses = [];
       this.loadCourses();
     }
   }
 
   loadCourses(): void {
-    const studentEmail: any = this.event;
-    this.studentCources = [];
+    const studentEmail: string = String(this.event);
     this.studentService
       .getCourseIdsForStudent(studentEmail)
       .pipe(
@@ -32,7 +32,8 @@ export class StudentCoursesComponent {
         mergeAll()
       )
       .subscribe((results) => {
-        this.studentCources.push(results);
+        this.studentCourses.push(results);
+        this.studentCourses.sort((a, b) => a.name.localeCompare(b.name));
       });
   }
 }
